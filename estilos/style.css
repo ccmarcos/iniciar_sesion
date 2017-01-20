@@ -1,3 +1,8 @@
+*{
+	margin:0px;
+	padding:0px;
+	font-family: Helvetica Neue;
+}
 body {
   margin: 0 auto;
   background-image: url(../images/logo.jpg);
@@ -34,7 +39,7 @@ input[type="email"],input[type="password"]{
 }
 
 .form-input::before{
-  content: "\f007";
+  /*content: "\f007";*/
   position: absolute;
   font-family: "FontAwesome";
   padding-left: 5px;
@@ -48,7 +53,7 @@ input[type="email"],input[type="password"]{
 }
 
 #eml::before{
-  content: "\f064";
+  content: "@";
 }
 
 .btn-login{
@@ -62,4 +67,91 @@ input[type="email"],input[type="password"]{
 
 .btn-login:hover{
   font-size: 14px;
+}
+
+/*estilos del popup*/
+
+.posicion-popup{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#envoltura{
+  width: 500px;
+  margin: 70px auto;
+  text-align: left;
+}
+
+#contenedor-popup{
+  background-color: #FFF;
+  padding: 60px;
+  -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+
+input[class="contrasena"]{
+  height: 37px;
+  width: 200px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding-left: 40px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border: 1px solid #BDC2C9;
+}
+
+.contenedor-inputs{
+	position: relative;
+	left: 65px;
+}
+
+input[class="contrasena"]:focus {
+/*border:2px solid #6392c5;*/
+/*background-color:#F0F8FF;*/
+/*margin-right:10px;*/
+outline:0px;
+-webkit-box-shadow: 0 0 2px 2px #6392c5;
+-moz-box-shadow: 0 0 2px 2px #6392c5;
+box-shadow: 0 0 2px 2px #6392c5;
+}
+
+.texto-crear-usuario{
+	font-size: 23px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-crear{
+	float: right;
+	color: #15a093;
+	text-decoration: none;
+	font-family: 'Ubuntu', sans-serif;
+	padding: 15px;
+	font-size: 19px;
+}
+
+.boton-x{
+	text-align: right;
+	color: white;
+	text-decoration: none;
+	padding-bottom: 5px;
+	font-size: 21px;
+}
+
+.cambiar-cont{
+  position: relative;
+  left: 110px;
+  top: 50px;
+}
+.cambiar-contrasena{
+  color: #E4E2E4;
+  text-decoration: none;
+}
+.cambiar-contrasena:hover{
+  text-decoration: underline;
 }
