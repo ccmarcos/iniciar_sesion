@@ -3,6 +3,7 @@
 	padding:0px;
 	font-family: Helvetica Neue;
 }
+html, body{height:100%;}
 body {
   margin: 0 auto;
   background-image: url(../images/logo.jpg);
